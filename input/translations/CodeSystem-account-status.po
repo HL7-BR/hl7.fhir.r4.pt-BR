@@ -1,0 +1,39 @@
+# en -> pt-BR
+
+#: account-status
+msgid "AccountStatus"
+msgstr "EstadoConta"
+
+#: account-status/title
+msgid "AccountStatus"
+msgstr "Estado da Conta"
+
+#: account-status/description
+msgid "Indicates whether the account is available to be used."
+msgstr "Indica se a conta está disponível para uso"
+
+#: active
+#. This account is active and may be used.
+msgid "Active"
+msgstr "Ativa"
+
+#: inactive
+#. This account is inactive and should not be used to track financial information.
+msgid "Inactive"
+msgstr "Inativa"
+
+#: entered-in-error
+#. This instance should not have been part of this patient's medical record.
+msgid "Entered in error"
+msgstr "Registrada incorretamente"
+
+#: on-hold
+#. This account is on hold.
+msgid "On Hold"
+msgstr "Em espera"
+
+#: unknown
+#. The account status is unknown.
+msgid "Unknown"
+msgstr "Desconhecido"
+

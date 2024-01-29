@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.org/fhir/tools/CodeSystem/organ-inventory-status"
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/tools/CodeSystem/organ-inventory-status"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.org/fhir/tools/ValueSet/organ-inventory-status", "version": "0.1.0"}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/tools/CodeSystem/organ-inventory-status"
+}
+-------------------------------------------------------------------------------------

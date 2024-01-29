@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="hl7.fhir.r4.pt-BR"/>
+  <url value="http://hl7.org/fhir/langs/ImplementationGuide/hl7.fhir.r4.pt-BR"/>
+  <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+  <version value="0.1.0"/>
+  <name value="FHIRLangPackBrazilianPortuguese"/>
+  <title value="Pacote de Idiomas para Português Brasileiro"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International Affiliate Council"/>
+  <description value="Pacote de Idiomas para Português Brasileiro"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.r4.pt-BR"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir"/>
+    <packageId value="hl7.fhir.r4.examples"/>
+    <version value="4.0.1"/>
+  </dependsOn>
+  <definition>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Índice"/>
+      <generation value="html"/>
+    </page>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2024+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="Working Copy"/>
+    </parameter>
+    <!-- The actual default working language -->
+    <parameter>
+      <code value="i18n-default-lang"/>
+      <value value="es"/>
+    </parameter>
+    <!-- folder to scan for translations to turn into supplements -->
+    <parameter>
+      <code value="translation-supplements"/>
+      <value value="input/translations"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

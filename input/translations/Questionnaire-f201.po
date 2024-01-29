@@ -1,0 +1,44 @@
+# en -> pt-BR
+
+#: 1
+msgid "Do you have allergies?"
+msgstr "Você tem alergias?"
+
+#: 2
+msgid "General questions"
+msgstr "Perguntas gerais"
+
+#: 2.1
+#. General questions
+msgid "What is your gender?"
+msgstr "Qual o seu gênero?"
+
+#: 2.2
+#. General questions
+msgid "What is your date of birth?"
+msgstr "Qual é sua data de nascimento?"
+
+#: 2.3
+#. General questions
+msgid "What is your country of birth?"
+msgstr "Qual é o seu país de nascimento?"
+
+#: 2.4
+#. General questions
+msgid "What is your marital status?"
+msgstr "Qual é o seu estado civil?"
+
+#: 3
+msgid "Intoxications"
+msgstr "Intoxicações"
+
+#: 3.1
+#. Intoxications
+msgid "Do you smoke?"
+msgstr "Você fuma?"
+
+#: 3.2
+#. Intoxications
+msgid "Do you drink alchohol?"
+msgstr "Você bebe álcool?"
+

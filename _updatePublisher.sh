@@ -31,11 +31,7 @@ while [ "$#" -gt 0 ]; do
 done
 
 echo "Checking internet connection"
-case "$OSTYPE" in
-	linux-gnu* ) ping tx.fhir.org -4 -c 1 -w 1000 >/dev/null ;;
-  darwin* )	ping tx.fhir.org -c 1 >/dev/null ;;
-	*) echo "unknown: $OSTYPE"; exit 1 ;;
-esac
+curl -sSf tx.fhir.org > /dev/null
 
 if [ $? -ne 0 ] ; then
   echo "Offline (or the terminology server is down), unable to update.  Exiting"
@@ -102,32 +98,4 @@ fi
 if [[ $skipPrompts != true ]]; then
     message="Update scripts? (enter 'y' or 'Y' to continue, any other key to cancel)?"
     read -r -p "$message" response
-  fi
-
-if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
-  echo "Downloading most recent scripts "
-
-  curl -L $update_bat_url -o /tmp/_updatePublisher.new
-  cp /tmp/_updatePublisher.new _updatePublisher.bat
-  rm /tmp/_updatePublisher.new
-
-  curl -L $gen_bat_url -o /tmp/_genonce.new
-  cp /tmp/_genonce.new _genonce.bat
-  rm /tmp/_genonce.new
-
-  curl -L $gencont_bat_url -o /tmp/_gencontinuous.new
-  cp /tmp/_gencontinuous.new _gencontinuous.bat
-  rm /tmp/_gencontinuous.new
-
-  curl -L $gencont_sh_url -o /tmp/_gencontinuous.new
-  cp /tmp/_gencontinuous.new _gencontinuous.sh
-  rm /tmp/_gencontinuous.new
-
-  curl -L $gen_sh_url -o /tmp/_genonce.new
-  cp /tmp/_genonce.new _genonce.sh
-  rm  /tmp/_genonce.new
-
-  curl -L $update_sh_url -o /tmp/_updatePublisher.new
-  cp /tmp/_updatePublisher.new _updatePublisher.sh
-  rm /tmp/_updatePublisher.new
 fi

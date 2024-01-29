@@ -44,7 +44,7 @@
     <!-- The actual default working language -->
     <parameter>
       <code value="i18n-default-lang"/>
-      <value value="es"/>
+      <value value="pt-BR"/>
     </parameter>
     <!-- folder to scan for translations to turn into supplements -->
     <parameter>
